@@ -1,0 +1,43 @@
+{
+ "result":{
+   "code": 1,
+   "page": 1,
+   "data": [{
+     "data_type": "1",
+     "title": "普通文章的标题"
+   },
+     {
+       "data_type": "2",
+       "title": "组图文章的标题"
+     }]
+ },
+  "matches":{
+    "data": [{
+      "date": "周六 06/11",
+      "match": [{
+        "index": 1,
+        "result": "finish",
+        "team1": { "name": "法国", "flag": 1 },
+        "team2": { "name": "罗马尼亚", "flag": 1 }
+      }, {
+        "index": 2,
+        "result": "living",
+        "team1": { "name": "葡萄牙", "flag": 1 },
+        "team2": { "name": "德国", "flag": 1 }
+      } ]
+    }, {
+      "date": "周日 06/12",
+      "match": [{
+        "index": 3,
+        "result": "15：00",
+        "team1": { "name": "瑞士", "flag": 1 },
+        "team2": { "name": "芬兰", "flag": 1 }
+      }, {
+        "index": 4,
+        "result": "01：00",
+        "team1": { "name": "英格兰", "flag": 1 },
+        "team2": { "name": "西班牙", "flag": 1 }
+      }]
+    }]
+  }
+}
