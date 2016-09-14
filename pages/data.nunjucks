@@ -1,0 +1,24 @@
+{% extends "layout.nunjucks" %}
+{% block content %}
+<h1>This is the data page!</h1>
+<h2>data section:</h2>
+{% for value in result.data %}
+    {% if value.data_type == 1 %}
+        {% include 'pages/news-article.html' %}
+    {% elif value.data_type == 2 %}
+        {% include 'pages/news-pic.html' %}
+    {% else %}
+        {% include 'pages/news-article.html' %}
+    {% endif %}
+{% endfor %}
+
+<h2>matches section</h2>
+{% for value in matches.data %}
+{{value.date}}
+    {% for match in value.match %}
+        <div class="txt">
+            <h4>队名：{{match.team1.name}}</h4>
+        </div>
+    {% endfor %}
+{% endfor %}
+{% endblock %}
