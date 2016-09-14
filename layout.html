@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>nunjucks</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+
+<div id="test"></div>
+<script src="scripts/nunjucks.js"></script>
+<script>
+    let obj = {
+        "code": 1,
+        "page": 1,
+        "data": [{
+            "data_type": "1",
+            "title": "普通文章的标题"
+        },
+            {
+                "data_type": "2",
+                "title": "组图文章的标题"
+            }]
+    };
+    let htmll = nunjucks.render('pages/data2.html', obj);
+    document.getElementById('test').innerHTML = htmll;
+</script>
+</body>
+</html>
